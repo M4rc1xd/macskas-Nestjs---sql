@@ -36,4 +36,10 @@ export class AppService {
     const rows = results as any
     return rows as Macska[];
   }
+
+  async ujJatek(nev: string){
+    const [results] = await mysqlConnection.execute
+    ('INSERT INTO jatekok (nev) VALUES (?)', [nev]);
+    console.log(results);
+  }
 }
