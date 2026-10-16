@@ -6,6 +6,10 @@
     <title>Document</title>
 </head>
 <body>
+    <form>
+        <input type="text" name="search" placeholder="Keresés"/>
+        <button type="submit">Keres</button>
+    </form>
     <% macskak.forEach(macska => { %>
         <h2><%= macska.szemSzin %></h2>
         <p><%= macska.suly %></p>
